@@ -61,9 +61,9 @@ const Sidebar: React.FC = () => {
                 <h4 className="font-bold text-sm">Crie sua primeira playlist</h4>
                 <p className="text-white-400 text-xs mt-1">É fácil, vamos te ajudar.</p>
                 <div className="p-2">
-                    <button className="bg-white hover:bg-gray-500 text-black font-bold text-xs py-2 px-4 rounded-full border border-gray-300 shadow">
-                    <span>Criar playlist</span>
-                    </button>
+                  <button className="bg-white hover:bg-gray-200 text-black font-bold py-1.5 px-4 rounded-full text-sm transition-colors">
+                    Criar playlist
+                  </button>
                 </div>
               </div>
             </div>
@@ -73,9 +73,9 @@ const Sidebar: React.FC = () => {
                 <h4 className="font-bold text-sm">Que tal seguir um podcast novo?</h4>
                 <p className="text-white-400 text-xs mt-1">Avisaremos você sobre novos episódios.</p>
                 <div className="p-2">
-                    <button className="bg-white hover:bg-gray-500 text-black font-bold text-xs py-2 px-4 rounded-full border border-gray-300 shadow">
-                    <span>Explore podcasts</span>
-                    </button>
+                  <button className="bg-white hover:bg-gray-200 text-black font-bold py-1.5 px-4 rounded-full text-sm transition-colors">
+                    Explore podcasts
+                  </button>
                 </div>
               </div>
             </div>
