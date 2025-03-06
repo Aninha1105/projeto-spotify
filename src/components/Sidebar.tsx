@@ -42,7 +42,7 @@ const Sidebar: React.FC = () => {
           </ul>
         </nav>
         
-        <div className="mt-2 bg-[#121212] rounded-lg p-2">
+        <div className="mt-auto bg-[#121212] rounded-lg p-2">
           <div className="flex items-center justify-between p-2">
             <a href="#" className="text-gray-300 hover:text-white flex items-center gap-3 transition-colors">
               <Library size={24} />
@@ -61,7 +61,7 @@ const Sidebar: React.FC = () => {
                 <h4 className="font-bold text-sm">Crie sua primeira playlist</h4>
                 <p className="text-white-400 text-xs mt-1">É fácil, vamos te ajudar.</p>
                 <div className="p-2">
-                  <button className="bg-white hover:bg-gray-200 text-black font-bold py-1.5 px-4 rounded-full text-sm transition-colors">
+                  <button className="bg-white text-sm text-black font-bold py-1.5 px-4 rounded-full hover:scale-105 transition-transform">
                     Criar playlist
                   </button>
                 </div>
@@ -73,7 +73,7 @@ const Sidebar: React.FC = () => {
                 <h4 className="font-bold text-sm">Que tal seguir um podcast novo?</h4>
                 <p className="text-white-400 text-xs mt-1">Avisaremos você sobre novos episódios.</p>
                 <div className="p-2">
-                  <button className="bg-white hover:bg-gray-200 text-black font-bold py-1.5 px-4 rounded-full text-sm transition-colors">
+                  <button className="bg-white text-sm text-black font-bold py-1.5 px-4 rounded-full hover:scale-105 transition-transform">
                     Explore podcasts
                   </button>
                 </div>
@@ -89,9 +89,9 @@ const Sidebar: React.FC = () => {
           <Download size={16} />
           <span>Instalar aplicativo</span>
         </a>
-        <div className="border-t border-gray-800 pt-4">
-          <p className="text-xs text-gray-400">© 2025 Spotify-Project</p>
-        </div>
+        <a href="#" className="text-gray-300 hover:text-white flex items-center gap-2 text-sm mb-6">
+          <span className="text-xs text-gray-400">cookies</span>
+        </a>
       </div>
     </div>
   );

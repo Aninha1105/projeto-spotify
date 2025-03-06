@@ -6,10 +6,10 @@ const TopBar: React.FC = () => {
     <header className="bg-[#121212] bg-opacity-95 backdrop-blur-sm sticky top-0 z-10 px-8 py-4 flex justify-between items-center">
       <div className="flex items-center gap-4">
         <div className="flex gap-2">
-          <button className="bg-black bg-opacity-70 rounded-full p-1">
+          <button className="bg-black bg-opacity-70 rounded-full p-1 hover:scale-105 transition-transform">
             <ChevronLeft size={24} className="text-white" />
           </button>
-          <button className="bg-black bg-opacity-70 rounded-full p-1">
+          <button className="bg-black bg-opacity-70 rounded-full p-1 hover:scale-105 transition-transform">
             <ChevronRight size={24} className="text-white" />
           </button>
         </div>
@@ -27,10 +27,10 @@ const TopBar: React.FC = () => {
       </div>
 
       <div className="inline-flex">
-        <button className="bg-black bg-opacity-0 hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full transition-colors">
+        <button className="bg-black bg-opacity-0 hover:bg-opacity-50 text-white font-bold py-2 px-4 rounded-full hover:scale-105 transition-colors transition-transform">
             Inscrever-se
         </button>
-        <button className="bg-white hover:bg-gray-400 text-black font-bold py-2 px-4 rounded-full transition-colors">
+        <button className="bg-white text-black font-bold py-2 px-4 rounded-full hover:scale-105 transition-transform">
             Entrar
         </button>
       </div>
