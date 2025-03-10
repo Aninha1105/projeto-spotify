@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChevronLeft, ChevronRight, Search } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Search} from 'lucide-react';
 
 const TopBar: React.FC = () => {
   return (

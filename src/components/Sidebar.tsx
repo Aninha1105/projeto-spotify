@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Search, Library, Plus, Heart, Download, Music, Clock, Pin } from 'lucide-react';
+import { Home, Library, Plus, Download, Music, WalletCards} from 'lucide-react';
 
 const playlists = [
   "Músicas Curtidas",
@@ -35,8 +35,8 @@ const Sidebar: React.FC = () => {
             </li>
             <li>
               <a href="#" className="text-gray-300 hover:text-white flex items-center gap-4 py-2 px-4 rounded hover:bg-[#282828] transition-colors">
-                <Search size={24} />
-                <span>Buscar</span>
+                <WalletCards size={24} />
+                <span>Navegar</span>
               </a>
             </li>
           </ul>
@@ -59,7 +59,7 @@ const Sidebar: React.FC = () => {
           <div className="mt-2 space-y-5 justify-between pr-2 flex-1">
             <div className="bg-[#242424] rounded-lg p-3">
               <h4 className="font-bold text-sm">Crie sua primeira playlist</h4>
-              <p className="text-gray-400 text-xs mt-1">É fácil, vamos te ajudar.</p>
+              <p className="text-white text-xs mt-1">É fácil, vamos te ajudar.</p>
               <div className="p-2">
                 <button className="bg-white text-sm text-black font-bold py-1.5 px-4 rounded-full hover:scale-105 transition-transform">
                   Criar playlist
@@ -69,7 +69,7 @@ const Sidebar: React.FC = () => {
 
             <div className="bg-[#242424] rounded-lg p-3">
               <h4 className="font-bold text-sm">Que tal seguir um podcast novo?</h4>
-              <p className="text-gray-400 text-xs mt-1">Avisaremos você sobre novos episódios.</p>
+              <p className="text-white text-xs mt-1">Avisaremos você sobre novos episódios.</p>
               <div className="p-2">
                 <button className="bg-white text-sm text-black font-bold py-1.5 px-4 rounded-full hover:scale-105 transition-transform">
                   Explore podcasts
