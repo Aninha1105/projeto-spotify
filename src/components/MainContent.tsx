@@ -79,12 +79,103 @@ const popularAlbums = [
   }
 ];
 
-const songs = [
-  { id: 1, title: 'Música Popular', artist: 'Artista 1', album: 'Álbum 1', duration: '3:24', plays: '1,234,567', addedAt: '3 dias atrás' },
-  { id: 2, title: 'Canção do Verão', artist: 'Artista 2', album: 'Álbum 2', duration: '2:45', plays: '987,654', addedAt: '1 semana atrás' },
-  { id: 3, title: 'Melodia Noturna', artist: 'Artista 3', album: 'Álbum 3', duration: '4:12', plays: '876,543', addedAt: '2 semanas atrás' },
-  { id: 4, title: 'Batida Eletrônica', artist: 'Artista 4', album: 'Álbum 4', duration: '3:56', plays: '765,432', addedAt: '1 mês atrás' },
-  { id: 5, title: 'Acústico Suave', artist: 'Artista 5', album: 'Álbum 5', duration: '3:33', plays: '654,321', addedAt: '1 mês atrás' },
+const popularRadios = [
+  { id: 1,
+    title: 'Rádio Charlie Brown Jr.',
+    description: 'Com O Rappa, Skank, Os Paralamas do Sucesso e mais',
+    image: 'https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/1on7ZQ2pvgeQF4vmIA09x5/en'
+  },
+  { id: 2,
+    title: "Rádio Henrique & Juliano",
+    description: 'Com Diego & Victor Hugo, Murilo Huff, Cristiano Araújo e ...',
+    image: 'https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/3p7PcrEHaaKLJnPUGOtRlT/en'
+  },
+  { id: 3,
+    title: "Rádio Mc Tuto",
+    description: 'Com Mc Negão Original, Mc IG, Mc Marks e mais ',
+    image: 'https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/6aoGgTKGqtsjj48ymcNs4Z/fr'
+  },
+  { id: 4,
+    title: "Rádio Jorge & Mateus",
+    description: 'Com Henrique & Juliano, Cristiano Araújo, Diego & Victor...',
+    image: 'https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/1elUiq4X7pxej6FRlrEzjM/en'
+  },
+  { id: 5,
+    title: "Rádio Us Agroboy",
+    description: 'Com Léo & Raphael, Antony & Gabriel, João Nelore & Texano...',
+    image: 'https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/7gXnv2nAoF9X0XJQ3AMp7d/en'
+  },
+  { id: 6,
+    title: "Rádio Bruno Mars",
+    description: 'Com Ed Sheeran, Katy Perry, Shawn Mendes e mais',
+    image: 'https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0du5cEVh5yTK9QJze8zA0C/en'
+  }
+];
+
+const hitParade = [
+  { id: 1,
+    title: "Top Músicas Mundo",
+    description: "Mundo: seu relatório semanal das faixas mais tocadas no...",
+    image: "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg",
+  },
+  { id: 2,
+    title: "Top Músicas Brasil",
+    description: "Brasil: seu relatório semanal das faixas mais tocadas no...",
+    image: "https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_br_default.jpg",
+  },
+  { id: 3,
+    title: "Top 50 Mundo",
+    description: "Mundo: seu relatório diário das faixas mais tocadas no...",
+    image: "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg",
+  },
+  { id: 4,
+    title: "Top 50 Brasil",
+    description: "Brasil: seu relatório diário das faixas mais tocadas no...",
+    image: "https://charts-images.scdn.co/assets/locale_en/regional/daily/region_br_default.jpg",
+  },
+  { id: 5,
+    title: "Viral 50 Mundo",
+    description: "Mundo: seu relatório diário das faixas que viralizaram.",
+    image: "https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg",
+  },
+  { id: 6,
+    title: "Viral 50 Brasil",
+    description: "Brasil: seu relatório diário das faixas que viralizaram.",
+    image: "https://charts-images.scdn.co/assets/locale_en/viral/daily/region_br_default.jpg",
+  }
+];
+
+const hitsBrasil = [
+  { id: 1,
+    title: "Top Brasil",
+    description: "Kew, DJ LK da Escócia e os maiores hits do país. O que tá bombando tá aqui.",
+    image: "https://i.scdn.co/image/ab67706f00000002396f5b8be3613b2562b17afb",
+  },
+  { id: 2,
+    title: "Esquenta Sertanejo",
+    description: "O melhor do sertanejo em uma só playlist!",
+    image: "https://i.scdn.co/image/ab67706f00000002ece1f38c71c8539e49b433de",
+  },
+  { id: 3,
+    title: "Funk Hits",
+    description: "Descer e os funks mais 🔑 do Brasil.",
+    image: "https://i.scdn.co/image/ab67706f000000021c791df340b61b18e7de0917",
+  },
+  { id: 4,
+    title: "Pagodeira",
+    description: "Os sucessos e as novidades dos grandes nomes do pagode.",
+    image: "https://i.scdn.co/image/ab67706f000000020d1e24ee84473d116e9d4dfb",
+  },
+  { id: 5,
+    title: "Sucessos Gospel",
+    description: "A palavra do Senhor na voz de grandes adoradores do Brasil. ",
+    image: "https://i.scdn.co/image/ab67706f000000023ad3d452ff32e163b6686115",
+  },
+  { id: 6,
+    title: "Paredão Explode",
+    description: "Os hits do forró, arrocha, pagodão e bregadeira!",
+    image: "https://i.scdn.co/image/ab67706f0000000229c292bae0752fd5327ba34c",
+  }
 ];
 
 const MainContent: React.FC = () => {
@@ -108,7 +199,7 @@ const MainContent: React.FC = () => {
                   <Play size={20} className="text-black" fill="black" />
                 </button>
               </div>
-              <h3 className="text-white font-bold truncate">{artist.name}</h3>
+              <h3 className="text-white truncate">{artist.name}</h3>
               <p className="text-gray-400 text-sm mt-1">{artist.type}</p>
             </div>
           ))}
@@ -133,8 +224,80 @@ const MainContent: React.FC = () => {
                   <Play size={20} className="text-black" fill="black" />
                 </button>
               </div>
-              <h3 className="text-white font-bold truncate">{album.title}</h3>
+              <h3 className="text-white truncate">{album.title}</h3>
               <p className="text-gray-400 text-sm mt-1">{album.artist}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="px-8 py-4">
+        <div className="flex justify-between items center mb-4">
+          <h2 className="text-2xl font-bold text-white">Estações de rádio populares</h2>
+          <a href= "#" className="text-sm text-gray-400 font-bold hover:underline">Mostrar tudo</a>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          {popularRadios.map(radio =>(
+            <div key={radio.id} className="bg-spotify-gray hover:bg-spotify-light-gray p-4 rounded-lg transition colors group cursor-pointer">
+              <div className="relative mb-4">
+                <img
+                  src={radio.image}
+                  alt={radio.title}
+                  className="w-full aspect-square object-cover rounded-md shadow-lg"
+                />
+                <button className="absolute bottom-2 right-2 bg-spotify-green rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg hover:scale-105 transform translate-y-2 group-hover:translate-y-0">
+                  <Play size={20} className="text-black" fill="black" />
+                </button>
+              </div>
+              <p className="text-gray-400 text-sm mt-1">{radio.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="px-8 py-4">
+      <div className="flex justify-between items center mb-4">
+          <h2 className="text-2xl font-bold text-white">Paradas em destaque</h2>
+          <a href= "#" className="text-sm text-gray-400 font-bold hover:underline">Mostrar tudo</a>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          {hitParade.map(playlist =>(
+            <div key={playlist.id} className="bg-spotify-gray hover:bg-spotify-light-gray p-4 rounded-lg transition colors group cursor-pointer">
+              <div className="relative mb-4">
+                <img
+                  src={playlist.image}
+                  alt={playlist.title}
+                  className="w-full aspect-square object-cover rounded-md shadow-lg"
+                />
+                <button className="absolute bottom-2 right-2 bg-spotify-green rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg hover:scale-105 transform translate-y-2 group-hover:translate-y-0">
+                  <Play size={20} className="text-black" fill="black" />
+                </button>
+              </div>
+              <p className="text-gray-400 text-sm mt-1">{playlist.description}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="px-8 py-4">
+      <div className="flex justify-between items center mb-4">
+          <h2 className="text-2xl font-bold text-white">Bom dia com os maiores hits do Brasil!</h2>
+          <a href= "#" className="text-sm text-gray-400 font-bold hover:underline">Mostrar tudo</a>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          {hitsBrasil.map(playlist =>(
+            <div key={playlist.id} className="bg-spotify-gray hover:bg-spotify-light-gray p-4 rounded-lg transition colors group cursor-pointer">
+              <div className="relative mb-4">
+                <img
+                  src={playlist.image}
+                  alt={playlist.title}
+                  className="w-full aspect-square object-cover rounded-md shadow-lg"
+                />
+                <button className="absolute bottom-2 right-2 bg-spotify-green rounded-full p-3 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg hover:scale-105 transform translate-y-2 group-hover:translate-y-0">
+                  <Play size={20} className="text-black" fill="black" />
+                </button>
+              </div>
+              <p className="text-gray-400 text-sm mt-1">{playlist.description}</p>
             </div>
           ))}
         </div>

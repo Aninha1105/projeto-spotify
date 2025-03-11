@@ -21,7 +21,9 @@ const Sidebar: React.FC = () => {
     <div className="bg-black w-80 flex flex-col h-[calc(100vh-80px)]">
       <div className="p-6">
         <div className="flex items-center gap-2 text-white mb-6">
-          <Music size={32} />
+          <a>
+            <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png" alt="icon" width={32} height={32}/>
+          </a>
           <span className="text-xl font-bold">Spotify-Project</span>
         </div>
         
