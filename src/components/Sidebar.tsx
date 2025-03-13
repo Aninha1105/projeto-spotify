@@ -1,6 +1,11 @@
 import React from 'react';
 import { Home, Library, Plus, Download, Music, WalletCards} from 'lucide-react';
 
+interface SidebarPropos {
+  currentPage: "home" | "browse";
+  setCurrentPage: (page: "home" | "browse") => void;
+}
+
 const playlists = [
   "Músicas Curtidas",
   "Descobertas da Semana",
@@ -16,7 +21,7 @@ const playlists = [
   "Pagode"
 ];
 
-const Sidebar: React.FC = () => {
+const Sidebar: React.FC<SidebarPropos> = ({currentPage, setCurrentPage}) => {
   return (
     <div className="bg-black w-80 flex flex-col h-[calc(100vh-80px)]">
       <div className="p-6">
@@ -30,16 +35,30 @@ const Sidebar: React.FC = () => {
         <nav className="mb-2"> {/* Reduzimos de mb-6 para mb-2 */}
           <ul className="space-y-2">
             <li>
-              <a href="#" className="text-white flex items-center gap-4 py-2 px-4 rounded bg-[#282828] font-bold transition-colors">
+              <button 
+                onClick={() => setCurrentPage('home')}
+                className={`w-full text-left ${
+                  currentPage === 'home' 
+                    ? 'text-white bg-[#282828]' 
+                    : 'text-gray-300 hover:text-white hover:bg-[#282828]'
+                } flex items-center gap-4 py-2 px-4 rounded transition-colors`}
+              >
                 <Home size={24} />
                 <span>Início</span>
-              </a>
+              </button>
             </li>
             <li>
-              <a href="#" className="text-gray-300 hover:text-white flex items-center gap-4 py-2 px-4 rounded hover:bg-[#282828] transition-colors">
+              <button 
+                onClick={() => setCurrentPage('browse')}
+                className={`w-full text-left ${
+                  currentPage === 'browse' 
+                    ? 'text-white bg-[#282828]' 
+                    : 'text-gray-300 hover:text-white hover:bg-[#282828]'
+                } flex items-center gap-4 py-2 px-4 rounded transition-colors`}
+              >
                 <WalletCards size={24} />
                 <span>Navegar</span>
-              </a>
+              </button>
             </li>
           </ul>
         </nav>
