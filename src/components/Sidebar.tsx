@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Library, Plus, Download, Music, WalletCards} from 'lucide-react';
+import { Home, Library, Plus, Download, WalletCards} from 'lucide-react';
 
 interface SidebarPropos {
   currentPage: "home" | "browse";

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play, Clock, Heart, MoreHorizontal } from 'lucide-react';
+import { Play } from 'lucide-react';
 
 const featuredArtists = [
   {
